@@ -95,7 +95,7 @@
     height: 14px;
 }
 
-.console-wrapper .console-wrapper ::-webkit-scrollbar-thumb {
+.console-wrapper ::-webkit-scrollbar-thumb {
     border: solid 0 rgb(0 0 0 / 0%);
     border-right-width: 4px;
     border-left-width: 4px;
@@ -103,11 +103,11 @@
     -webkit-box-shadow: inset 0 0 0 1px hsl(211, 10%, 53%), inset 0 0 0 4px hsl(209deg 18% 30%);
 }
 
-.console-wrapper .console-wrapper ::-webkit-scrollbar-track-piece {
+.console-wrapper ::-webkit-scrollbar-track-piece {
     margin: 4px 0;
 }
 
-.console-wrapper .console-wrapper ::-webkit-scrollbar-thumb:horizontal {
+.console-wrapper ::-webkit-scrollbar-thumb:horizontal {
     border-right-width: 0;
     border-left-width: 0;
     border-top-width: 4px;
@@ -115,6 +115,6 @@
     -webkit-border-radius: 4px 9px;
 }
 
-.console-wrapper .console-wrapper ::-webkit-scrollbar-corner {
+.console-wrapper ::-webkit-scrollbar-corner {
     background: transparent;
 }
