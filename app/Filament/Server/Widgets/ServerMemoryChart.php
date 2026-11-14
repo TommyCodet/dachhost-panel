@@ -30,8 +30,9 @@ class ServerMemoryChart extends ChartWidget
                 [
                     'data' => [],
                     'backgroundColor' => [
-                        'rgba(96, 165, 250, 0.3)',
+                        'rgba(255, 138, 50, 0.20)',
                     ],
+                    'borderColor' => '#ff8a32',
                     'tension' => '0.3',
                     'fill' => true,
                 ],
