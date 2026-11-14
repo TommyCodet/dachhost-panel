@@ -36,8 +36,8 @@ return [
             'button_label' => 'Create first Node',
         ],
         'intro-support' => [
-            'heading' => 'Support Pelican',
-            'content' => 'Thank you for using Pelican, this could only be achieved through the support of you, our contributors, and the rest of our supporters!',
+            'heading' => 'Support DachHost',
+            'content' => 'Thank you for using DachHost, this could only be achieved through the support of you, our contributors, and the rest of our supporters!',
             'extra_note' => 'We appreciate any and all support from anybody.',
             'button_translate' => 'Help Translate',
             'button_donate' => 'Donate Directly',
