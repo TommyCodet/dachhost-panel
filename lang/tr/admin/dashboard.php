@@ -35,8 +35,8 @@ return [
             'button_label' => 'İlk Düğümü oluşturun',
         ],
         'intro-support' => [
-            'heading' => 'Pelican\'ı Destekleyin',
-            'content' => 'Pelican\'ı kullandığınız için teşekkür ederiz, bu yalnızca sizin, katkıda bulunanlarımızın ve diğer destekçilerimizin desteğiyle başarılabildi!',
+            'heading' => 'DachHost\'ı Destekleyin',
+            'content' => 'DachHost\'ı kullandığınız için teşekkür ederiz, bu yalnızca sizin, katkıda bulunanlarımızın ve diğer destekçilerimizin desteğiyle başarılabildi!',
             'extra_note' => 'Her türlü desteği takdir ediyoruz.',
             'button_translate' => 'Çeviriye Yardım Et',
             'button_donate' => 'Doğrudan Bağış Yap',
