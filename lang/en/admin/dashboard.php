@@ -41,6 +41,7 @@ return [
             'extra_note' => 'We appreciate any and all support from anybody.',
             'button_translate' => 'Help Translate',
             'button_donate' => 'Donate Directly',
+            'button_support' => 'DachHost on GitHub',
         ],
         'intro-help' => [
             'heading' => 'Need Help?',
