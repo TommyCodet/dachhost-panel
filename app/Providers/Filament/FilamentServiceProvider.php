@@ -52,7 +52,7 @@ class FilamentServiceProvider extends ServiceProvider
             'danger' => Color::Red,
             'gray' => Color::Zinc,
             'info' => Color::Sky,
-            'primary' => Color::Blue,
+            'primary' => Color::Orange,
             'success' => Color::Green,
             'warning' => Color::Amber,
         ]);
