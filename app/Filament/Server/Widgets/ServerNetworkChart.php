@@ -63,14 +63,18 @@ class ServerNetworkChart extends ChartWidget
         // TODO: use "panel.use_binary_prefix" config value
         return RawJs::make(<<<'JS'
         {
+            color: '#a1a8b5',
             scales: {
                 x: {
                     display: false,
+                    grid: { display: false },
                 },
                 y: {
                     min: 0,
+                    grid: { color: 'rgba(161, 168, 181, 0.12)' },
                     ticks: {
                         display: true,
+                        color: '#a1a8b5',
                         callback(value) {
                             const bytes = typeof value === 'string' ? parseInt(value, 10) : value;
 
