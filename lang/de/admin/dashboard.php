@@ -40,6 +40,7 @@ return [
             'extra_note' => 'Wir freuen uns über jede Unterstützung.',
             'button_translate' => 'Beim Übersetzen helfen',
             'button_donate' => 'Direkt spenden',
+            'button_support' => 'DachHost auf GitHub',
         ],
         'intro-help' => [
             'heading' => 'Benötigen Sie Hilfe?',
