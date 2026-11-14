@@ -302,3 +302,247 @@ a:hover {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* Authentication and simple layouts */
+.fi-simple-layout,
+.fi-simple-main-ctn,
+.fi-simple-main,
+.fi-simple-page,
+.fi-auth-page {
+    background:
+        radial-gradient(ellipse at 50% 0%, rgb(255 138 50 / 9%), transparent 42%),
+        var(--dh-bg) !important;
+    color: var(--dh-text) !important;
+}
+
+.fi-simple-main {
+    border: 1px solid var(--dh-border);
+    border-radius: var(--dh-radius-lg);
+    background: var(--dh-surface) !important;
+    box-shadow: var(--dh-shadow);
+}
+
+.fi-simple-header-heading,
+.fi-simple-header-subheading,
+.fi-fo-field-wrp-label,
+.fi-fo-field-wrp-label span,
+.fi-input-wrp input,
+.fi-input-wrp textarea,
+.fi-select-input,
+.fi-fo-textarea,
+.fi-fo-rich-editor,
+.fi-fo-checkbox-list-label,
+.fi-fo-radio-label {
+    color: var(--dh-text) !important;
+}
+
+.fi-simple-header-subheading,
+.fi-fo-field-wrp-hint,
+.fi-fo-field-wrp-helper-text,
+.fi-fo-field-wrp-description {
+    color: var(--dh-muted) !important;
+}
+
+.fi-simple-header-heading {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.fi-simple-main .fi-btn-color-primary {
+    min-height: 2.75rem;
+    box-shadow: 0 8px 24px rgb(255 138 50 / 14%);
+}
+
+/* Unified surfaces, including plugin-provided Filament components */
+.fi-section,
+.fi-wi,
+.fi-ta-ctn,
+.fi-in-entry,
+.fi-fo-component-ctn,
+.fi-modal-window,
+.fi-dropdown-panel,
+.fi-global-search-results,
+.fi-tenant-menu,
+.fi-notification,
+.fi-callout,
+.fi-in-repeatable-item {
+    border-color: var(--dh-border) !important;
+    background-color: var(--dh-surface) !important;
+}
+
+.fi-section,
+.fi-wi,
+.fi-ta-ctn,
+.fi-modal-window,
+.fi-dropdown-panel,
+.fi-global-search-results {
+    box-shadow: var(--dh-shadow);
+}
+
+.fi-input-wrp,
+.fi-select-input,
+.fi-fo-textarea,
+.fi-fo-rich-editor,
+.fi-fo-date-time-picker,
+.fi-fo-file-upload,
+.fi-fo-tags-input,
+.fi-fo-key-value {
+    background-color: #10151e !important;
+    border-color: var(--dh-border) !important;
+}
+
+.fi-input-wrp input,
+.fi-input-wrp textarea,
+.fi-select-input,
+.fi-fo-textarea {
+    background: transparent !important;
+}
+
+.fi-input-wrp:focus-within,
+.fi-select-input:focus,
+.fi-fo-textarea:focus {
+    border-color: var(--dh-accent) !important;
+    box-shadow: 0 0 0 3px var(--dh-accent-soft) !important;
+}
+
+.fi-btn:not(.fi-btn-color-primary) {
+    border: 1px solid var(--dh-border);
+    background: var(--dh-surface-raised);
+    color: var(--dh-text);
+}
+
+.fi-btn:not(.fi-btn-color-primary):hover {
+    border-color: #414a59;
+    background: #242c3a;
+}
+
+.fi-icon-btn {
+    border-radius: var(--dh-radius-sm) !important;
+}
+
+.fi-sidebar-group-label,
+.fi-sidebar-group-collapse-button,
+.fi-breadcrumbs-item-label,
+.fi-tabs-item-label {
+    color: var(--dh-muted);
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-label,
+.fi-sidebar-item-active .fi-icon,
+.fi-tabs-item-active .fi-tabs-item-label {
+    color: var(--dh-accent) !important;
+}
+
+.fi-ta-header,
+.fi-ta-header-toolbar,
+.fi-ta-footer,
+.fi-pagination,
+.fi-modal-footer,
+.fi-section-header {
+    border-color: var(--dh-border) !important;
+}
+
+.fi-ta-empty-state,
+.fi-empty-state {
+    color: var(--dh-muted);
+}
+
+.fi-modal-close-btn,
+.fi-dropdown-list-item {
+    color: var(--dh-muted);
+}
+
+.fi-dropdown-list-item:hover {
+    background: var(--dh-surface-raised) !important;
+    color: var(--dh-text) !important;
+}
+
+.fi-badge {
+    border: 1px solid var(--dh-border);
+}
+
+.fi-tabs {
+    border-color: var(--dh-border);
+}
+
+.fi-tabs-item {
+    transition: color var(--dh-transition), border-color var(--dh-transition);
+}
+
+.fi-tabs-item:hover {
+    color: var(--dh-accent);
+}
+
+.fi-pagination-item-active {
+    background: var(--dh-accent-soft) !important;
+    color: var(--dh-accent) !important;
+}
+
+/* Monaco, terminal, code and file-management surfaces */
+.monaco-editor,
+.monaco-editor .margin,
+.monaco-editor-background,
+.monaco-editor .monaco-editor-background,
+.fme-wrapper,
+.fme-container,
+.fme-element-wrapper {
+    background-color: #10151e !important;
+}
+
+.fme-wrapper {
+    overflow: hidden;
+    border: 1px solid var(--dh-border);
+    border-radius: var(--dh-radius);
+}
+
+.fme-full-screen {
+    inset: 4rem 0 0 0;
+    width: 100vw;
+    height: calc(100dvh - 4rem);
+    border: 1px solid var(--dh-border);
+    border-radius: 0;
+    background: var(--dh-bg) !important;
+}
+
+.xterm .xterm-viewport {
+    scrollbar-color: #424b5b #0b0d12;
+}
+
+pre,
+code,
+.fi-code-editor,
+.fi-fo-code-editor {
+    border-color: var(--dh-border);
+}
+
+hr {
+    border-color: var(--dh-border);
+}
+
+@media (max-width: 767px) {
+    .fi-simple-main {
+        width: min(100% - 2rem, 30rem);
+        margin-inline: auto;
+        padding: 1.25rem;
+    }
+
+    .fi-sidebar {
+        border-inline-end: 0 !important;
+    }
+
+    .fi-header {
+        flex-wrap: wrap;
+    }
+
+    .fi-ta-content {
+        overflow-x: auto;
+    }
+
+    .fme-full-screen {
+        inset: 3.5rem 0 0 0;
+        width: 100vw;
+        height: calc(100dvh - 3.5rem);
+    }
+}
