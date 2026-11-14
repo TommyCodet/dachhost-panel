@@ -35,9 +35,9 @@ class SupportWidget extends FormWidget
                     ])
                     ->headerActions([
                         Action::make('db_donate')
-                            ->label(trans('admin/dashboard.sections.intro-support.button_donate'))
+                            ->label('DachHost auf GitHub')
                             ->icon(TablerIcon::Cash)
-                            ->url('https://pelican.dev/donate', true)
+                            ->url('https://github.com/TommyCodet/dachhost-panel', true)
                             ->color('success'),
                     ]),
             ]);
