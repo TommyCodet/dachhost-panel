@@ -51,12 +51,16 @@ class ServerMemoryChart extends ChartWidget
     {
         return RawJs::make(<<<'JS'
         {
+            color: '#a1a8b5',
             scales: {
                 y: {
                     min: 0,
+                    ticks: { color: '#a1a8b5' },
+                    grid: { color: 'rgba(161, 168, 181, 0.12)' },
                 },
                 x: {
                     display: false,
+                    grid: { display: false },
                 }
             },
             plugins: {
