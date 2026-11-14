@@ -32,8 +32,9 @@ class ServerDiskIoChart extends ChartWidget
                     'label' => 'Read',
                     'data' => [],
                     'backgroundColor' => [
-                        'rgba(100, 255, 105, 0.5)',
+                        'rgba(255, 138, 50, 0.22)',
                     ],
+                    'borderColor' => '#ff8a32',
                     'tension' => '0.3',
                     'fill' => true,
                 ],
@@ -41,8 +42,9 @@ class ServerDiskIoChart extends ChartWidget
                     'label' => 'Write',
                     'data' => [],
                     'backgroundColor' => [
-                        'rgba(96, 165, 250, 0.3)',
+                        'rgba(161, 168, 181, 0.16)',
                     ],
+                    'borderColor' => '#a1a8b5',
                     'tension' => '0.3',
                     'fill' => true,
                 ],
