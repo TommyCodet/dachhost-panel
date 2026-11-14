@@ -546,3 +546,142 @@ hr {
         height: calc(100dvh - 3.5rem);
     }
 }
+
+
+/* Filament 5 color classes and component states */
+.fi-btn.fi-color-primary,
+.fi-btn-color-primary,
+.fi-color-primary .fi-btn {
+    border-color: var(--dh-accent) !important;
+    background: var(--dh-accent) !important;
+    color: #17120d !important;
+}
+
+.fi-btn.fi-color-primary:hover,
+.fi-btn-color-primary:hover,
+.fi-color-primary .fi-btn:hover {
+    border-color: var(--dh-accent-hover) !important;
+    background: var(--dh-accent-hover) !important;
+    color: #17120d !important;
+}
+
+.fi-icon-btn.fi-color-primary,
+.fi-color-primary .fi-icon-btn {
+    color: var(--dh-accent) !important;
+}
+
+.fi-sidebar-item a,
+.fi-topbar-item a,
+.fi-dropdown-list-item,
+.fi-tabs-item,
+.fi-pagination-item,
+.fi-icon-btn,
+.fi-btn {
+    transition:
+        color var(--dh-transition),
+        background-color var(--dh-transition),
+        border-color var(--dh-transition),
+        box-shadow var(--dh-transition),
+        transform var(--dh-transition);
+}
+
+.fi-sidebar-item a:focus-visible,
+.fi-topbar-item a:focus-visible,
+.fi-btn:focus-visible,
+.fi-icon-btn:focus-visible,
+.fi-input-wrp:focus-within {
+    outline-color: var(--dh-accent) !important;
+}
+
+.fi-layout footer,
+.fi-footer {
+    color: var(--dh-muted) !important;
+}
+
+.fi-layout footer a,
+.fi-footer a {
+    color: var(--dh-muted) !important;
+}
+
+.fi-layout footer a:hover,
+.fi-footer a:hover {
+    color: var(--dh-accent) !important;
+}
+
+/* Keep page-level plugin output inside the same visual system. */
+.fi-prose,
+.fi-prose p,
+.fi-prose li,
+.fi-in-entry,
+.fi-in-text,
+.fi-fo-field-wrp-label {
+    color: var(--dh-text);
+}
+
+.fi-prose a,
+.fi-in-entry a {
+    color: var(--dh-accent);
+}
+
+.fi-prose a:hover,
+.fi-in-entry a:hover {
+    color: var(--dh-accent-hover);
+}
+
+.fi-ta-cell,
+.fi-ta-header-cell,
+.fi-breadcrumbs-item,
+.fi-breadcrumbs-item-label {
+    color: var(--dh-muted);
+}
+
+.fi-ta-cell a,
+.fi-breadcrumbs-item-current .fi-breadcrumbs-item-label {
+    color: var(--dh-text);
+}
+
+.fi-ta-row:focus-within {
+    background: rgb(255 138 50 / 5%) !important;
+}
+
+.fi-fo-repeater-item,
+.fi-fo-builder-item,
+.fi-fo-fieldset,
+.fi-in-repeatable-item {
+    border-color: var(--dh-border) !important;
+    border-radius: var(--dh-radius) !important;
+    background: var(--dh-surface) !important;
+}
+
+.fi-fo-toggle,
+.fi-fo-checkbox,
+.fi-fo-radio {
+    accent-color: var(--dh-accent);
+}
+
+.fi-fo-code-editor,
+.fi-fo-rich-editor,
+.fi-fo-markdown-editor {
+    border-radius: var(--dh-radius-sm);
+    overflow: hidden;
+}
+
+.fi-modal-window {
+    max-width: min(96vw, 64rem);
+}
+
+@media (max-width: 767px) {
+    .fi-main {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .fi-header-heading {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+    }
+
+    .fi-modal-window {
+        max-width: calc(100vw - 1rem);
+        margin: 0.5rem;
+    }
+}
