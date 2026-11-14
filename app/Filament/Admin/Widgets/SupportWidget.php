@@ -38,7 +38,7 @@ class SupportWidget extends FormWidget
                             ->label(trans('admin/dashboard.sections.intro-support.button_support'))
                             ->icon(TablerIcon::Cash)
                             ->url('https://github.com/TommyCodet/dachhost-panel', true)
-                            ->color('success'),
+                            ->color('primary'),
                     ]),
             ]);
     }
