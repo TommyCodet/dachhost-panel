@@ -1,9 +1,9 @@
 <footer class="flex flex-col items-center justify-center text-center space-y-2 p-4 text-gray-600 dark:text-gray-400">
     {{ \Filament\Support\Facades\FilamentView::renderHook(\App\Enums\CustomRenderHooks::FooterStart->value) }}
 
-    <a class="font-semibold" href="https://dachhost.de" target="_blank" rel="noopener noreferrer">
+    <span class="font-semibold">
         &copy; {{ date('Y') }} {{ $appName }}
-    </a>
+    </span>
 
     @if(config('app.debug'))
         <div class="flex space-x-1 text-xs">
