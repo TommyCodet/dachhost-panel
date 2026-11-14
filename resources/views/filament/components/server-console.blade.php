@@ -180,7 +180,7 @@
             setTimeout(() => URL.revokeObjectURL(link.href), 1000);
         });
 
-        const TERMINAL_PRELUDE = '\u001b[1m\u001b[33m{{ $terminalPrelude }}@' + '{{ \Filament\Facades\Filament::getTenant()->name }}' + ' ~ \u001b[0m';
+        const TERMINAL_PRELUDE = '\u001b[1m\u001b[38;5;208m{{ $terminalPrelude }}@' + '{{ \Filament\Facades\Filament::getTenant()->name }}' + ' ~ \u001b[0m';
 
         const handleConsoleOutput = (line, prelude = false) =>
             terminal.writeln((prelude ? TERMINAL_PRELUDE : '') + line.replace(/(?:\r\n|\r|\n)$/im, '') + '\u001b[0m');
