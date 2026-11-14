@@ -35,11 +35,12 @@ return [
             'button_label' => 'Erste Node erstellen',
         ],
         'intro-support' => [
-            'heading' => 'Pelican unterstützen',
-            'content' => 'Vielen Dank für die Verwendung von Pelican, dies konnte nur durch die Unterstützung von Ihnen, unseren Mitwirkenden und den Rest unserer Unterstützer erreicht werden!',
+            'heading' => 'DachHost unterstützen',
+            'content' => 'Vielen Dank für die Verwendung von DachHost, dies konnte nur durch die Unterstützung von Ihnen, unseren Mitwirkenden und den Rest unserer Unterstützer erreicht werden!',
             'extra_note' => 'Wir freuen uns über jede Unterstützung.',
             'button_translate' => 'Beim Übersetzen helfen',
             'button_donate' => 'Direkt spenden',
+            'button_support' => 'DachHost auf GitHub',
         ],
         'intro-help' => [
             'heading' => 'Benötigen Sie Hilfe?',

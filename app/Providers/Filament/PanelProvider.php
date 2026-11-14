@@ -53,10 +53,10 @@ abstract class PanelProvider extends BasePanelProvider
                 '*/oauth/redirect/*',
             ])
             ->databaseNotifications()
-            ->brandName(config('app.name', 'Pelican'))
-            ->brandLogo(config('app.logo'))
+            ->brandName('DachHost')
+            ->brandLogo(null)
             ->brandLogoHeight('2rem')
-            ->favicon(config('app.favicon', '/pelican.ico'))
+            ->favicon('/dachhost.svg')
             ->topNavigation(function () {
                 $navigationType = user()?->getCustomization(CustomizationKey::TopNavigation);
 

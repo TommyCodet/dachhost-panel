@@ -24,6 +24,8 @@
 /* Required by widgets */
 @import '../../vendor/filament/widgets/resources/css/index.css';
 
+@import './dachhost.css';
+
 @source '../../vendor/gboquizosanchez/filament-log-viewer/resources/views/**/*.blade.php';
 
 @custom-variant dark (.dark &);

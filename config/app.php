@@ -2,9 +2,9 @@
 
 return [
 
-    'name' => env('APP_NAME', 'Pelican'),
+    'name' => 'DachHost',
     'logo' => env('APP_LOGO'),
-    'favicon' => env('APP_FAVICON', '/pelican.ico'),
+    'favicon' => '/dachhost.svg',
 
     'version' => 'canary',
 

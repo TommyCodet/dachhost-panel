@@ -30,8 +30,9 @@ class ServerCpuChart extends ChartWidget
                 [
                     'data' => [],
                     'backgroundColor' => [
-                        'rgba(96, 165, 250, 0.3)',
+                        'rgba(255, 138, 50, 0.20)',
                     ],
+                    'borderColor' => '#ff8a32',
                     'tension' => '0.3',
                     'fill' => true,
                 ],
@@ -50,12 +51,16 @@ class ServerCpuChart extends ChartWidget
     {
         return RawJs::make(<<<'JS'
         {
+            color: '#a1a8b5',
             scales: {
                 y: {
                     min: 0,
+                    ticks: { color: '#a1a8b5' },
+                    grid: { color: 'rgba(161, 168, 181, 0.12)' },
                 },
                 x: {
                     display: false,
+                    grid: { display: false },
                 }
             },
             plugins: {

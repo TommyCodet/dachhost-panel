@@ -35,10 +35,10 @@ class SupportWidget extends FormWidget
                     ])
                     ->headerActions([
                         Action::make('db_donate')
-                            ->label(trans('admin/dashboard.sections.intro-support.button_donate'))
+                            ->label(trans('admin/dashboard.sections.intro-support.button_support'))
                             ->icon(TablerIcon::Cash)
-                            ->url('https://pelican.dev/donate', true)
-                            ->color('success'),
+                            ->url('https://github.com/TommyCodet/dachhost-panel', true)
+                            ->color('primary'),
                     ]),
             ]);
     }

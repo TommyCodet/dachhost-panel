@@ -75,7 +75,7 @@
                     monaco.editor.defineTheme('custom', {{ $editorTheme() }});
                     document.getElementById(monacoId).editor = monaco.editor.create($refs.monacoEditorElement, {
                         value: monacoContent,
-                        theme: localStorage.getItem('theme') === 'light' ? 'iPlastic' : 'custom',
+                        theme: 'custom',
                         fontSize: monacoFontSize,
                         lineNumbersMinChars: lineNumbersMinChars,
                         automaticLayout: automaticLayout,

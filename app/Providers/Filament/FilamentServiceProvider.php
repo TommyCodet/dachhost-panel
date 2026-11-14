@@ -52,7 +52,7 @@ class FilamentServiceProvider extends ServiceProvider
             'danger' => Color::Red,
             'gray' => Color::Zinc,
             'info' => Color::Sky,
-            'primary' => Color::Blue,
+            'primary' => Color::Orange,
             'success' => Color::Green,
             'warning' => Color::Amber,
         ]);
@@ -62,11 +62,7 @@ class FilamentServiceProvider extends ServiceProvider
             fn () => Blade::render('@livewire(\App\Livewire\AlertBannerContainer::class)'),
         );
 
-        $appName = config('app.name', 'Pelican');
-
-        if (strtolower($appName) !== 'pelican') {
-            $appName = "{$appName} - Powered by Pelican";
-        }
+        $appName = 'DachHost';
 
         FilamentView::registerRenderHook(
             PanelsRenderHook::FOOTER,

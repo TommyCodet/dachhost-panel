@@ -97,7 +97,7 @@ class UpdateWidget extends FormWidget implements HasActions
                             ->label(trans('admin/dashboard.sections.intro-update-available.button_guide'))
                             ->icon(TablerIcon::ClipboardText)
                             ->button()
-                            ->url('https://pelican.dev/docs/panel/update', true)
+                            ->url('https://github.com/TommyCodet/dachhost-panel', true)
                             ->color('warning'),
                     ]),
             ]);

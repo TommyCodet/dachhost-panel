@@ -2,6 +2,11 @@
 
 .console-wrapper {
     position: relative;
+    overflow: hidden;
+    border: 1px solid #292f3b;
+    border-radius: 14px;
+    background: #0b0d12;
+    box-shadow: 0 18px 50px rgb(0 0 0 / 22%);
 }
 
 /* Copy / download buttons over the top right corner, clear of the scrollbar. */
@@ -12,7 +17,7 @@
     z-index: 10;
     display: flex;
     gap: 2px;
-    opacity: 0.5;
+    opacity: 0.72;
     transition: opacity 150ms;
 }
 
@@ -22,13 +27,14 @@
 }
 
 #terminal {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    min-height: 360px;
+    border-radius: 13px 13px 0 0;
+    background: #0b0d12;
     overflow: hidden;
 }
 
 .xterm-selection div {
-    background-color: transparent !important;
+    background-color: rgb(255 138 50 / 28%) !important;
 }
 
 .xterm .xterm-rows > div {
@@ -41,13 +47,55 @@
     cursor: not-allowed;
 }
 
-::-webkit-scrollbar {
+#send-command {
+    min-height: 48px;
+    padding: 0.75rem 1rem;
+    border: 0;
+    border-top: 1px solid #292f3b;
+    border-radius: 0 0 13px 13px;
+    background: #11151d !important;
+    color: #ffffff;
+    font: inherit;
+}
+
+#send-command::placeholder {
+    color: #7f8998;
+}
+
+#send-command:focus {
+    outline: 2px solid rgb(255 138 50 / 40%);
+    outline-offset: -2px;
+}
+
+#terminal .xterm {
+    padding: 1rem 0.5rem;
+}
+
+#terminal .xterm-viewport {
+    scrollbar-color: #424b5b #0b0d12;
+}
+
+@media (max-width: 640px) {
+    #terminal {
+        min-height: 280px;
+    }
+
+    #terminal .xterm {
+        padding: 0.5rem 0.25rem;
+    }
+
+    .console-tools {
+        right: 10px;
+    }
+}
+
+.console-wrapper ::-webkit-scrollbar {
     background: none;
     width: 14px;
     height: 14px;
 }
 
-::-webkit-scrollbar-thumb {
+.console-wrapper ::-webkit-scrollbar-thumb {
     border: solid 0 rgb(0 0 0 / 0%);
     border-right-width: 4px;
     border-left-width: 4px;
@@ -55,11 +103,11 @@
     -webkit-box-shadow: inset 0 0 0 1px hsl(211, 10%, 53%), inset 0 0 0 4px hsl(209deg 18% 30%);
 }
 
-::-webkit-scrollbar-track-piece {
+.console-wrapper ::-webkit-scrollbar-track-piece {
     margin: 4px 0;
 }
 
-::-webkit-scrollbar-thumb:horizontal {
+.console-wrapper ::-webkit-scrollbar-thumb:horizontal {
     border-right-width: 0;
     border-left-width: 0;
     border-top-width: 4px;
@@ -67,6 +115,6 @@
     -webkit-border-radius: 4px 9px;
 }
 
-::-webkit-scrollbar-corner {
+.console-wrapper ::-webkit-scrollbar-corner {
     background: transparent;
 }

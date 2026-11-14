@@ -26,7 +26,7 @@ return [
         ],
         'intro-no-update' => [
             'heading' => 'Twój Panel jest aktualny',
-            'content' => 'Używasz Pelican w wersji :version. Twój panel jest aktualny!',
+            'content' => 'Używasz DachHost w wersji :version. Twój panel jest aktualny!',
         ],
         'intro-first-node' => [
             'heading' => 'Nie wykryto żadnych węzłów',
@@ -35,8 +35,8 @@ return [
             'button_label' => 'Stwórz pierwszy węzeł',
         ],
         'intro-support' => [
-            'heading' => 'Wspomóż Pelican',
-            'content' => 'Dziękujemy za korzystanie z Pelican, jest to możliwe jedynie dzięki waszemu wsparciu, naszym współtwórcom i pozostałym naszym zwolennikom!',
+            'heading' => 'Wspomóż DachHost',
+            'content' => 'Dziękujemy za korzystanie z DachHost, jest to możliwe jedynie dzięki waszemu wsparciu, naszym współtwórcom i pozostałym naszym zwolennikom!',
             'extra_note' => 'Doceniamy wszelkie wsparcie ze strony każdego.',
             'button_translate' => 'Pomóż w tłumaczeniu',
             'button_donate' => 'Darowizna',

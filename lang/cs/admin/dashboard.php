@@ -35,8 +35,8 @@ return [
             'button_label' => 'Vytvořit první uzel',
         ],
         'intro-support' => [
-            'heading' => 'Podpořte Pelican!',
-            'content' => 'Děkujeme za používání Pelican, toto je možné vytvářet jen díky vaší podpoře, přespěvatelům a dalším podporovatelům!',
+            'heading' => 'Podpořte DachHost!',
+            'content' => 'Děkujeme za používání DachHost, toto je možné vytvářet jen díky vaší podpoře, přespěvatelům a dalším podporovatelům!',
             'extra_note' => 'Vážíme si jaké koliv podpory od kohokoliv.',
             'button_translate' => 'Pomocte Přeložit',
             'button_donate' => 'Darovat přímo',
