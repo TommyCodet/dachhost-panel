@@ -54,9 +54,9 @@ abstract class PanelProvider extends BasePanelProvider
             ])
             ->databaseNotifications()
             ->brandName('DachHost')
-            ->brandLogo(config('app.logo'))
+            ->brandLogo(null)
             ->brandLogoHeight('2rem')
-            ->favicon(config('app.favicon', '/pelican.ico'))
+            ->favicon('/dachhost.svg')
             ->topNavigation(function () {
                 $navigationType = user()?->getCustomization(CustomizationKey::TopNavigation);
 
