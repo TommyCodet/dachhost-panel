@@ -5,7 +5,7 @@
         $userFontSize = (int) user()?->getCustomization(\App\Enums\CustomizationKey::ConsoleFontSize);
         $userRows = (int) user()?->getCustomization(\App\Enums\CustomizationKey::ConsoleRows);
 
-        $terminalPrelude = str(config('app.name'))->slug()->lower()->toString();
+        $terminalPrelude = 'dachhost';
 
         $componentName = fn (string $class) => app('livewire.finder')->normalizeName($class);
     @endphp
@@ -67,25 +67,25 @@
     @script
     <script>
         let theme = {
-            background: 'rgba(19,26,32,0.7)',
+            background: '#0b0d12',
             cursor: 'transparent',
-            black: '#000000',
+            black: '#0b0d12',
             red: '#E54B4B',
-            green: '#9ECE58',
-            yellow: '#FAED70',
-            blue: '#396FE2',
+            green: '#a3d977',
+            yellow: '#ffb36f',
+            blue: '#78a8ff',
             magenta: '#BB80B3',
             cyan: '#2DDAFD',
             white: '#d0d0d0',
-            brightBlack: 'rgba(255, 255, 255, 0.2)',
+            brightBlack: '#687181',
             brightRed: '#FF5370',
             brightGreen: '#C3E88D',
-            brightYellow: '#FFCB6B',
+            brightYellow: '#ff9b50',
             brightBlue: '#82AAFF',
             brightMagenta: '#C792EA',
             brightCyan: '#89DDFF',
             brightWhite: '#ffffff',
-            selection: '#FAF089'
+            selection: 'rgba(255, 138, 50, 0.28)'
         };
 
         let options = {
